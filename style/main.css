@@ -1,0 +1,33 @@
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.594);
+            overflow: hidden;
+        }
+        .container{
+            display: none;
+            grid-template-columns: repeat(3, 6vw);
+            grid-gap: 0.5vh;
+            padding: 2vh;
+        }
+        .container div{
+            background-color: #444;
+            border-radius: 3px;
+            padding: 1vh 1vw;
+            display: flex;
+            justify-content: center;
+        }
+        #sc{
+            color: rgba(3, 153, 16, 0.785);
+            font-size: 5vw;
+            padding: 1vh;
+            margin: 1vh;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        @media screen and (max-width: 780px) {
+        .container{
+            display: grid;
+        }
+    }

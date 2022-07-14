@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link data-n-head="ssr" rel="icon" href="https://th.bing.com/th/id/R.97dcec57429ae43ab94ece88cb9960dc?rik=g5mYUxs%2bwXmV6Q&pid=ImgRaw&r=0" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css"></link>
+    <link rel="stylesheet" href="style/modal.css"></link>
+    <link rel="manifest" href="manifest.json"></head>
+<body>
+        <h1 id="sc">Score:</h1>
+        <canvas id="bb" width="480" height="480"></canvas>
+        <div class="container">
+            <div class="none"></div>
+            <div class="up-key" onclick="keyDown(38)">&#9650;</div>
+            <div class="none"></div>
+            <div class="left-key" onclick="keyDown(37)">&#9664;</div>
+            <div class="down-key" onclick="keyDown(40)">&#9660;</div>
+            <div class="right-key" onclick="keyDown(39)">&#9654;</div>
+        </div>    
+
+        <div id='card' class="animated fadeIn">
+            <div id='upper-side'>
+                <h3 id='status'>
+                Failed  
+              </h3>
+            </div>
+            <div id='lower-side'>
+              <p id='message'>
+                <span id="highscore" style="color:rgba(47, 227, 62, 0.692)"></span>
+                <span id="score" style="color:#444"></span>
+              </p>
+              <a href="index.html" id="contBtn">Restart</a>
+            </div>
+          </div>
+
+          <script src="script/main.js"></script>
+</body>
+</html>

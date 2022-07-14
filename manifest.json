@@ -1,0 +1,10 @@
+{
+    "name": "Snake Game",
+    "short_name": "Snake",
+    "theme_color": "rgba(3, 153, 16, 0.785)",
+    "background_color": "rgba(68, 68, 68, 0.594)",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }
